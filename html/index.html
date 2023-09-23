@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas e tabelas</title>
+    <link rel="icon" type="image/x-icon" href="../icon/favicon.ico">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            background-color: black;
+        }
+
+        h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white;
+            height: 60px;
+            margin-bottom: 20px;
+            font-size: 36px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }h2 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 24px;
+            padding: 27px 0px 27px 0px;
+            color: #fff;
+            background-color: grey;
+            display: flex;
+            justify-content: center;
+        } h3 {
+            padding: 5px;
+            color: #fff;
+            background-color: grey;
+            display: flex;
+            justify-content: center;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        } p {
+            font-size: 14px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0px 0px 0px -20px;
+        }
+
+        #listas-nao-ordenadas {
+            background-color: #ddd;
+            margin: 0px 0px 0px 0px;
+            display: flex;
+            flex: wrap;
+            flex-direction: row;
+            justify-content: space-evenly;
+        } #nordenada1 {
+            list-style-type: disc;
+        } #nordenada2 {
+            list-style-type: circle;
+        } #nordenada3 {
+            list-style-type: square;
+        }
+
+        #listas-ordenadas {
+            background-color: #ddd;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-evenly;
+        } #ordenada1 {
+            list-style-type: decimal;
+        } #ordenada2 {
+            list-style-type: upper-alpha;
+        } #ordenada3 {
+            list-style-type: upper-roman;
+        }
+
+        #fut {
+            padding: 15px;
+            background-color: #ddd;
+            display: flex;
+            flex: wrap;
+            justify-content: center;
+        } table {
+            border: 1px solid;
+            border-radius: 5px;
+            background: #ddd;
+        } tr, th, td {
+            text-align: center;
+            border: 1px solid;
+            border-radius: 2px;
+        } th {
+            background-color: #bbb;
+            padding: 0px 2px 0px 2px;
+        } td {
+            padding: 2px;
+        } .icon {
+            border: 1px none;
+            background: none;
+        } img {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Listas e tabelas</h1>
+    </header>
+
+    <h3>Listas não-ordenada</h3>
+    <section id="listas-nao-ordenadas">
+        <nav>
+            <p>Não-ordenada com pontos</p>
+            <ul id="nordenada1">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </nav>
+        <nav>
+            <p>Não-ordenada com pontos ocos</p>
+            <ul id="nordenada2">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </nav>
+        <nav>
+            <p>Não-ordenada com quadrados</p>
+            <ul id="nordenada3">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </nav>
+    </section>
+
+    <h3>Listas ordenadas</h3>
+    <section id="listas-ordenadas">
+        <nav>
+            <p>Ordenada com números</p>
+            <ol id="ordenada1">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ol>
+        </nav>
+        <nav>
+            <p>Ordenada com alfabeto</p>
+            <ol id="ordenada2">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ol>
+        </nav>
+        <nav>
+            <p>Ordenada com números romanos</p>
+            <ol id="ordenada3">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ol>
+        </nav>
+    </section>
+
+    <h2>Tabela de jogos</h2>
+    <menu id="fut">
+        <table>
+            <tr>
+                <th>logo</th>
+                <th>nmr</th>
+                <th>Classificação</th>
+                <th>P</th>
+                <th>J</th>
+                <th>V</th>
+            </tr>
+            <tr>
+                <td class="icon"><img src="https://s.sde.globo.com/media/organizations/2019/02/04/botafogo-svg.svg" alt="PalmeirasLogo"></td>
+                <td><strong>1</strong></td>
+                <td>Botafogo</td>
+                <td>51</td>
+                <td>24</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                                <td class="icon"><img src="https://s.sde.globo.com/media/organizations/2019/07/06/Palmeiras.svg" alt="PalmeirasLogo"></td>
+                <td><strong>2</strong></td>
+                <td>Palmeiras</td>
+                <td>44</td>
+                <td>24</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td class="icon"><img src="https://s.sde.globo.com/media/organizations/2018/03/12/gremio.svg" alt="PalmeirasLogo"></td>
+                <td><strong>3</strong></td>
+                <td>Grêmio</td>
+                <td>43</td>
+                <td>24</td>
+                <td>13</td>
+            </tr>
+            <tr>
+                <td class="icon"><img src="https://s.sde.globo.com/media/organizations/2021/06/28/bragantino.svg" alt="PalmeirasLogo"></td>
+                <td><strong>4</strong></td>
+                <td>Bragantino</td>
+                <td>42</td>
+                <td>24</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td class="icon"><img src="https://s.sde.globo.com/media/organizations/2018/03/11/fluminense.svg" alt="PalmeirasLogo"></td>
+                <td><strong>5</strong></td>
+                <td>Fluminese</td>
+                <td>41</td>
+                <td>24</td>
+                <td>12</td>
+            </tr>
+        </table>
+    </menu>
+</body>
+</html>
