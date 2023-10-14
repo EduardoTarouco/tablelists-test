@@ -11,6 +11,7 @@
             padding: 0px;
         }
         body {
+            height: 2000px;
             background-color: black;
         }
 
@@ -100,6 +101,34 @@
         } img {
             width: 30px;
             height: 30px;
+        }
+
+        #aninhada {
+            background-color: #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } .titleollist {
+            list-style-type: upper-roman;
+            margin-left: -10px;
+        } .uldata {
+            list-style-type: circle;
+            margin-left: 15px;
+        } .uldata1 {
+            list-style-type: disc;
+            margin-left: 25px;
+        }
+
+        #tabelaresp {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } .par {
+            background-color: #ddd;
+        } .impar {
+            background-color: #bbb;
+        } #tabelaresp th {
+            background-color: gray;
         }
     </style>
 </head>
@@ -214,6 +243,71 @@
                 <td>41</td>
                 <td>24</td>
                 <td>12</td>
+            </tr>
+        </table>
+    </menu>
+
+    <h2>Lista aninhada</h2>
+    <aside id="aninhada">
+        <ol>
+            <li class="titleollist"><strong>Lista ordenada com elementos não-ordenados</strong></li>
+            <ul class="uldata">
+                <li>Item 1</li>
+                    <ul class="uldata1">
+                        <li>Item 1</li>
+                    </ul>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+            <li class="titleollist"><strong>Teste</strong></li>
+            <ol>
+                <li>Lista de itens</li>
+                <ul class="uldata">
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+            </ol>
+        </ol>
+    </aside>
+
+    <h2>Tabela em cores diferentes</h2>
+    <menu>
+        <table id="tabelaresp">
+            <tr class="impar">
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Altura</th>
+                <th>Gênero</th>
+                <th>Escolaridade</th>
+            </tr>
+            <tr class="par">
+                <td>Pedro</td>
+                <td>12</td>
+                <td>1,62</td>
+                <td>♂</td>
+                <td>Fundamental 6º</td>
+            </tr>
+            <tr class="impar">
+                <td>Julia</td>
+                <td>15</td>
+                <td>1,70</td>
+                <td>♀</td>
+                <td>Fundamental 9º</td>
+            </tr>
+            <tr class="par">
+                <td>João</td>
+                <td>16</td>
+                <td>1,81</td>
+                <td>♂</td>
+                <td>EM 1º</td>
+            </tr>
+            <tr class="impar">
+                <td>Maria</td>
+                <td>16</td>
+                <td>1,74</td>
+                <td>♀</td>
+                <td>EM 1º</td>
             </tr>
         </table>
     </menu>
